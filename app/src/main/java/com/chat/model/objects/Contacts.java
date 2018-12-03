@@ -10,12 +10,6 @@ public class Contacts {
         this.user_id_server = user_serverid;
     }
 
-    public Contacts(int id, String phonebook, String user_serverid) {
-        this.contact_id = id;
-        this.phonebook_ref = phonebook;
-        this.user_id_server = user_serverid;
-    }
-
     public int getId() {
         return contact_id;
     }

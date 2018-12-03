@@ -25,6 +25,12 @@ public class Messages {
     public String getGeolocation() {
         return geolocation;
     }
+    public int getContact() {
+        return contact_id;
+    }
+    public int getConversation() {
+        return conversation_id;
+    }
 
     public String toString() {
         return  content + ' ' + geolocation ;

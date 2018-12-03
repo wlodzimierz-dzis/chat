@@ -20,7 +20,7 @@ public class Conversations {
     public String getName() {
         return name;
     }
-    public ArrayList<Messages> getGroups() {
+    public ArrayList<Messages> getMessages() {
         return messages;
     }
 
