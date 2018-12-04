@@ -16,7 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Conversation_list"></activity>
+        <activity android:name=".chat"></activity>
     </application>
-
 </manifest>
