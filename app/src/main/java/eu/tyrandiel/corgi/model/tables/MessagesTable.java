@@ -1,22 +1,26 @@
-package com.chat.model.tables;
+package eu.tyrandiel.corgi.model.tables;
 
 import android.database.sqlite.SQLiteDatabase;
 
-public class ConvMembersTable {
-    public static final String TABLE_NAME = "ConvMembersTable";
+public class MessagesTable {
+    public static final String TABLE_NAME = "MessagesTable";
 
     public class Columns {
-        public static final String CM_ID = "cm_id";
-        public static final String CONVERSATION_ID = "conversation_id";
+        public static final String MESSAGE_ID = "message_id";
         public static final String CONTACT_ID = "contact_id";
+        public static final String CONVERSATION_ID = "conversation_id";
+        public static final String CONTENT = "content";
+        public static final String GEOLOCATION = "geolocation";
     }
 
     public static void create(SQLiteDatabase db) {
         String query = "CREATE TABLE " + TABLE_NAME +
                 "(" +
-                Columns.CM_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                Columns.CONVERSATION_ID + " INTEGER," +
+                Columns.MESSAGE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 Columns.CONTACT_ID + " INTEGER," +
+                Columns.CONVERSATION_ID + " INTEGER," +
+                Columns.CONTENT + " TEXT," +
+                Columns.GEOLOCATION + " TEXT," +
 
                 "FOREIGN KEY (" + Columns.CONTACT_ID +
                 ") REFERENCES " + ContactsTable.TABLE_NAME +
@@ -35,4 +39,3 @@ public class ConvMembersTable {
         db.execSQL(query);
     }
 }
-

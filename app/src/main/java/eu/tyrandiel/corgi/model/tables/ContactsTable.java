@@ -1,4 +1,4 @@
-package com.chat.model.tables;
+package eu.tyrandiel.corgi.model.tables;
 
 import android.database.sqlite.SQLiteDatabase;
 

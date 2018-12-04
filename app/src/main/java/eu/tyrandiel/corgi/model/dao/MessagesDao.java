@@ -1,9 +1,8 @@
-package com.chat.model.dao;
+package eu.tyrandiel.corgi.model.dao;
 
-import com.chat.model.objects.Messages;
-import com.chat.model.tables.MessagesTable;
+import eu.tyrandiel.corgi.model.objects.Messages;
+import eu.tyrandiel.corgi.model.tables.MessagesTable;
 
-import java.util.ArrayList;
 import android.content.ContentValues;
 
 import android.database.Cursor;

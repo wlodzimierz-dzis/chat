@@ -1,7 +1,7 @@
-package com.chat.model.dao;
+package eu.tyrandiel.corgi.model.dao;
 
-import com.chat.model.objects.Contacts;
-import com.chat.model.tables.ContactsTable;
+import eu.tyrandiel.corgi.model.objects.Contacts;
+import eu.tyrandiel.corgi.model.tables.ContactsTable;
 
 
 import android.content.ContentValues;

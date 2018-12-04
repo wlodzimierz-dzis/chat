@@ -1,4 +1,4 @@
-package com.chat.model.objects;
+package eu.tyrandiel.corgi.model.objects;
 
 import java.util.ArrayList;
 

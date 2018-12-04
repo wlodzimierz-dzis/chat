@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Conversation_list">
+    tools:context="eu.tyrandiel.corgi.Conversation_list">
 
     <ListView
         android:id="@+id/student_list"

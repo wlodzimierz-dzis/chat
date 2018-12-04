@@ -1,4 +1,4 @@
-package com.chat.model.objects;
+package eu.tyrandiel.corgi.model.objects;
 
 public class Messages {
     private int message_id;

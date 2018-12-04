@@ -1,4 +1,4 @@
-package com.chat.model.objects;
+package eu.tyrandiel.corgi.model.objects;
 
 public class Contacts {
     private int contact_id;
