@@ -3,57 +3,57 @@ package eu.tyrandiel.corgi.ui;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+
 import eu.tyrandiel.corgi.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link MapFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- */
-public class MapFragment extends Fragment {
+public class MarkedMapFragment extends com.google.android.gms.maps.MapFragment {
 
-    private OnFragmentInteractionListener mListener;
+//    private OnFragmentInteractionListener mListener;
 
-    public MapFragment() {
+    public MarkedMapFragment() {
         // Required empty public constructor
     }
+
+    private GoogleMap mMap;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_map, container, false);
+        return super.onCreateView(inflater, container, savedInstanceState);
+        //return inflater.inflate(R.layout.fragment_map, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
+ /*       if (mListener != null) {
             mListener.onFragmentInteraction(uri);
         }
-    }
+*/    }
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
+/*        if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
         } else {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
         }
-    }
+*/    }
 
     @Override
     public void onDetach() {
         super.onDetach();
-        mListener = null;
+ //       mListener = null;
     }
 
     /**
@@ -66,8 +66,10 @@ public class MapFragment extends Fragment {
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
      */
+    /*
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+    */
 }

@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import eu.tyrandiel.corgi.R;
+import eu.tyrandiel.corgi.ui.ConversationView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         ListView listView = findViewById(R.id.chatsList);
         listView.setAdapter(studentsAdapter);
     }
+
     private ArrayAdapter setAdapter() {
         String chats[] = {"Bartosz", "Tomasz", "Konrad"};
         ArrayList<String> chatsList = new ArrayList<String>();
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onItemClick( View view) {
-        Intent i = new Intent(MainActivity.this, chat.class);
+        Intent i = new Intent(MainActivity.this, ConversationView.class);
         startActivity(i);
     }
 }
