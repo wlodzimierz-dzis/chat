@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Conversation_list">
 
-    <Button
-        android:id="@+id/buttonMainActivity"
-        android:onClick="createNewActivity"
+    <ListView
+        android:id="@+id/student_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/student_textlist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create new activity"
-        android:textSize="30px"
-        android:layout_marginTop="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"/>
 
 </android.support.constraint.ConstraintLayout>
