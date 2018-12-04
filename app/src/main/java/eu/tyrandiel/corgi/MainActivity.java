@@ -1,7 +1,8 @@
-package com.chat;
+package eu.tyrandiel.corgi;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import eu.tyrandiel.corgi.R;
 
 public class MainActivity extends AppCompatActivity {
 

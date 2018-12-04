@@ -1,4 +1,4 @@
-package com.chat;
+package eu.tyrandiel.corgi;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -1,4 +1,4 @@
-package com.chat;
+package eu.tyrandiel.corgi;
 
 import org.junit.Test;
 
