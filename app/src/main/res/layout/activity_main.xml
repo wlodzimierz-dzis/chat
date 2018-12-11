@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="eu.tyrandiel.corgi.MainActivity">
 
-    <ListView
-        android:id="@+id/chatsList"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
 
-        />
-
-    <TextView
-        android:id="@+id/chat_textlist"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:onClick="onItemClick"
-        android:paddingVertical="10dp"
-        android:paddingHorizontal="20dp"/>
 
     <!--<Button-->
         <!--android:id="@+id/add_student_btn"-->
@@ -38,8 +20,51 @@
         <!--android:layout_height="60dp"-->
         <!--android:layout_marginRight="30dp"-->
         <!--android:layout_marginBottom="30dp"-->
+        <!--android:onClick="onItemClick"-->
         <!--app:layout_constraintRight_toRightOf="parent"-->
         <!--app:layout_constraintBottom_toBottomOf="parent"-->
         <!--/>-->
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="137dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Enter number"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPhone"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="-1dp"
+        android:text="Send activation code" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextPhone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="220dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Enter verification number"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="170dp"
+        android:text="Sign In" />
+</RelativeLayout>

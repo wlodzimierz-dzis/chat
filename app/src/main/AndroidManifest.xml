@@ -10,16 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <meta-data
-                android:name="com.google.android.geo.API_KEY"
-                android:value="--insert--api--key--here--"
-                />
-        <activity android:name="eu.tyrandiel.corgi.MainActivity">
+            android:name="com.google.android.geo.API_KEY"
+            android:value="code" />
+
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="eu.tyrandiel.corgi.ui.ConversationView"></activity>
+        <activity android:name=".ui.ConversationView" />
+        <activity android:name=".ConversesionListMain"></activity>
     </application>
+
 </manifest>
